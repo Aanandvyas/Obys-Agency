@@ -61,7 +61,7 @@ html,body{
     width: 8vw;
     height: 8vw;
     opacity: 0;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -91,8 +91,37 @@ html,body{
     100%{
         color: transparent;
         font-family: 'silk serif';
-        font-weight: 500;
+        font-weight: 300;
         -webkit-text-stroke: 1px #fff;
+        opacity: 0;
+    }
+}
+
+#loaderdown{
+    position: absolute;
+    left: 29vw;
+    bottom: 10vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1{
+    0%{
+        opacity: 1;
+    }
+
+    37%{
+        opacity:0;
+    }
+
+    62%{
+        opacity: 1;
+    }
+
+    100%{
         opacity: 0;
     }
 }
@@ -101,6 +130,17 @@ html,body{
     position: relative;
     background-color: #030303;
 }
+/* cursor */
+
+#crsr{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+}
 
 #page1{
     width: 100%;
@@ -108,3 +148,62 @@ html,body{
     background-color: #151515;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5vw 4.5vw;
+}
+
+#nav-part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#nav-part h4{
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+
+.hero{
+    font-size: 3.5vw;
+    font-weight: 1000;
+    line-height: 7vw;
+    text-transform: uppercase;
+    width: 72%;
+    margin-left: 25%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.hero:nth-child(2){
+    margin-top: 15vh;
+}
+
+.hero h2,.hero h3{
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-weight: 1000;
+    line-height: 7vw;
+}
+
+.hero h2{
+    text-decoration: underline;
+    margin: 0 1vw;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 500;
+}
+
+#hero4{
+    line-height: 8vw;
+}
