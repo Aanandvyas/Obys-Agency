@@ -37,7 +37,8 @@ tl.to("#loaderdown",{
 tl.to("#loader",{
     opacity:0,
     duration:0.3,
-    delay:3
+    delay:3,
+
 })
 
 tl.from("#page1",{
@@ -54,6 +55,11 @@ tl.to("#loader",{
 tl.from("nav",{
     opacity:0,
     delay:0.4
+})
+
+tl.from("#page1-extra",{
+    opacity:0,
+    delay:0.3
 })
 
 tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero3 h3,#hero4 h1",{
@@ -76,3 +82,4 @@ function cursorAnimation(){
 
 cursorAnimation()
 loadingAnimation()
+
